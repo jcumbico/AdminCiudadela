@@ -1,0 +1,20 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+
+<div id="chartContainer3" style="float:left">{{ output3|safe }}</div>
+<div id="chartContainer2" style="float:left">{{ output2|safe }}</div>
+<div style="clear:both"></div>
+
+<div id="espacio01" style="float:left">{{ output|safe }}</div>
+<div id="chartContainer4" style="float:left">{{ output4|safe }}</div>
+<div style="clear:both"></div>
+
+<div id="chartContainer5" style="float:left">{{ output5|safe }}</div>
+<div id="chartContainer6" style="float:left">{{ output6|safe }}</div>
+<div style="clear:both"></div>
+
+
+{% endblock %}

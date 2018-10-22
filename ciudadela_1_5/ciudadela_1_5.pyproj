@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>ciudadela_1_5</Name>
+    <RootNamespace>ciudadela_1_5</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6fb5c67c-a168-404b-b297-fc21c5b9751a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>ciudadela_1_5.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\fusioncharts.py" />
+    <Compile Include="app\static\fusioncharts\admin.py" />
+    <Compile Include="app\static\fusioncharts\datahandler.py" />
+    <Compile Include="app\static\fusioncharts\fusioncharts.py" />
+    <Compile Include="app\static\fusioncharts\models.py" />
+    <Compile Include="app\static\fusioncharts\samples\chart_annotation.py" />
+    <Compile Include="app\static\fusioncharts\samples\chart_instance_level_api.py" />
+    <Compile Include="app\static\fusioncharts\samples\chart_message.py" />
+    <Compile Include="app\static\fusioncharts\samples\chart_product_level_api.py" />
+    <Compile Include="app\static\fusioncharts\samples\chart_special_chart.py" />
+    <Compile Include="app\static\fusioncharts\samples\chart_tooltip.py" />
+    <Compile Include="app\static\fusioncharts\samples\chart_update_onclick.py" />
+    <Compile Include="app\static\fusioncharts\samples\client_side_chart_export.py" />
+    <Compile Include="app\static\fusioncharts\samples\drilldown_from_database_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\dynamic_chart_resize.py" />
+    <Compile Include="app\static\fusioncharts\samples\dynamic_chart_type.py" />
+    <Compile Include="app\static\fusioncharts\samples\export_chart_using_export_handler.py" />
+    <Compile Include="app\static\fusioncharts\samples\fetching_data_from_database.py" />
+    <Compile Include="app\static\fusioncharts\samples\fetching_json_data_from_url.py" />
+    <Compile Include="app\static\fusioncharts\samples\fetching_xml_data_from_url.py" />
+    <Compile Include="app\static\fusioncharts\samples\get_data_from_scatter_chart.py" />
+    <Compile Include="app\static\fusioncharts\samples\highlight_specific_data_points.py" />
+    <Compile Include="app\static\fusioncharts\samples\interactive_event.py" />
+    <Compile Include="app\static\fusioncharts\samples\number_format_module.py" />
+    <Compile Include="app\static\fusioncharts\samples\product_life_cycle_event.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_angular_gauge_using_dictionary_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_angular_gauge_using_json_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_charts_by_common_theme.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_chart_with_different_language.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_column2d_chart_using_dictionary_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_column_line_area_combi_using_json_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_map_using_dictionary_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_map_using_json_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_multiseries_column2d_chart_using_json_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_multiseries_StackedColumn2dline_using_json_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\rendering_pie3d_using_json_example.py" />
+    <Compile Include="app\static\fusioncharts\samples\special_chart_type_api.py" />
+    <Compile Include="app\static\fusioncharts\samples\special_event.py" />
+    <Compile Include="app\static\fusioncharts\samples\update_data_runtime.py" />
+    <Compile Include="app\static\fusioncharts\samples\updating_chart_properties.py" />
+    <Compile Include="app\static\fusioncharts\samples\__init__.py" />
+    <Compile Include="app\static\fusioncharts\settings.py" />
+    <Compile Include="app\static\fusioncharts\urls.py" />
+    <Compile Include="app\static\fusioncharts\views.py" />
+    <Compile Include="app\static\fusioncharts\wsgi.py" />
+    <Compile Include="app\static\fusioncharts\__init__.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="ciudadela_1_5\__init__.py" />
+    <Compile Include="ciudadela_1_5\settings.py" />
+    <Compile Include="ciudadela_1_5\urls.py" />
+    <Compile Include="ciudadela_1_5\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\imagenes\" />
+    <Folder Include="app\static\app\fusioncharts\" />
+    <Folder Include="app\static\app\fusioncharts\maps\" />
+    <Folder Include="app\static\app\fusioncharts\themes\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\static\fusioncharts\" />
+    <Folder Include="app\static\fusioncharts\samples\" />
+    <Folder Include="app\static\fusioncharts\templates\" />
+    <Folder Include="app\static\fusioncharts\templates\static\" />
+    <Folder Include="app\static\fusioncharts\templates\static\data\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="ciudadela_1_5\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\static\app\imagenes\bingo.png" />
+    <Content Include="app\static\app\imagenes\bingo2.jpg" />
+    <Content Include="app\static\app\imagenes\cuadro1.PNG" />
+    <Content Include="app\static\app\imagenes\cuadro2.PNG" />
+    <Content Include="app\static\app\imagenes\cuadro3.PNG" />
+    <Content Include="app\static\app\imagenes\cuadro4.PNG" />
+    <Content Include="app\static\app\imagenes\cuadro5.PNG" />
+    <Content Include="app\static\app\imagenes\leche.png" />
+    <Content Include="app\static\app\imagenes\logo4.png" />
+    <Content Include="app\static\app\imagenes\maquinas.jpg" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.charts.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.gantt.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.maps.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.overlappedbar2d.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.overlappedcolumn2d.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.powercharts.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.treemap.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.vml.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.widgets.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.zoomline.js" />
+    <Content Include="app\static\app\fusioncharts\fusioncharts.zoomscatter.js" />
+    <Content Include="app\static\app\fusioncharts\maps\fusioncharts.usa.js" />
+    <Content Include="app\static\app\fusioncharts\maps\fusioncharts.world.js" />
+    <Content Include="app\static\app\fusioncharts\maps\readme.txt" />
+    <Content Include="app\static\app\fusioncharts\themes\fusioncharts.theme.candy.js" />
+    <Content Include="app\static\app\fusioncharts\themes\fusioncharts.theme.carbon.js" />
+    <Content Include="app\static\app\fusioncharts\themes\fusioncharts.theme.fint.js" />
+    <Content Include="app\static\app\fusioncharts\themes\fusioncharts.theme.fusion.js" />
+    <Content Include="app\static\app\fusioncharts\themes\fusioncharts.theme.gammel.js" />
+    <Content Include="app\static\app\fusioncharts\themes\fusioncharts.theme.ocean.js" />
+    <Content Include="app\static\app\fusioncharts\themes\fusioncharts.theme.zune.js" />
+    <Content Include="app\static\fusioncharts\templates\catalogue.html" />
+    <Content Include="app\static\fusioncharts\templates\chart-instance-level-api.html" />
+    <Content Include="app\static\fusioncharts\templates\chart-product-level-api.html" />
+    <Content Include="app\static\fusioncharts\templates\chart-theme.html" />
+    <Content Include="app\static\fusioncharts\templates\chart-update-onclick.html" />
+    <Content Include="app\static\fusioncharts\templates\data-from-scatter-chart.html" />
+    <Content Include="app\static\fusioncharts\templates\dynamic-chart-type.html" />
+    <Content Include="app\static\fusioncharts\templates\dynamic-resize.html" />
+    <Content Include="app\static\fusioncharts\templates\index.html" />
+    <Content Include="app\static\fusioncharts\templates\interactive-event.html" />
+    <Content Include="app\static\fusioncharts\templates\number-format.html" />
+    <Content Include="app\static\fusioncharts\templates\product-life-cycle-event.html" />
+    <Content Include="app\static\fusioncharts\templates\special-chart-type-api.html" />
+    <Content Include="app\static\fusioncharts\templates\special-event.html" />
+    <Content Include="app\static\fusioncharts\templates\static\data\data.json" />
+    <Content Include="app\static\fusioncharts\templates\static\data\data.xml" />
+    <Content Include="app\static\fusioncharts\templates\update-data-runtime.html" />
+    <Content Include="app\templates\app\actividades.html" />
+    <Content Include="app\templates\app\estadisticas.html" />
+    <Content Include="app\templates\app\eventos.html" />
+    <Content Include="app\templates\app\cuentas.html" />
+    <Content Include="app\templates\app\proyectos.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\nosotros.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

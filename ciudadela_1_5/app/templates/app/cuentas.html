@@ -1,0 +1,38 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<div class="table-responsive">
+<table class="table table-striped table-sm">
+{% for cuenta in conjunto %}
+
+    <tr>
+        <td>
+            {% if cuenta.Anio != null %}
+                {{cuenta.Anio}}  {{cuenta.MesNombre}}
+            {% endif %}
+        </td>
+        <td>
+            {% if cuenta.Tipo != null %}
+                {{cuenta.Tipo}}  
+            {% endif %}
+        </td>
+        <td>
+            {% if cuenta.Titulo != null %}
+                {{cuenta.Titulo}}  
+            {% endif %}
+        </td>
+        <td style="text-align:right">
+            {% if cuenta.Valor != null %}
+                {{cuenta.Valor}}  
+            {% endif %}
+        </td>
+    </tr>
+{% endfor %}
+</table>
+</div>
+
+{% endblock %}

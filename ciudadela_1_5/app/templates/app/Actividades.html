@@ -1,0 +1,45 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<div class="table-responsive">
+<table class="table table-striped table-sm">
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Proyecto/actividad</th>
+            <th>Fecha y Hora</th>
+            <th>Responsable</th>
+        </tr>
+    </thead>
+{% for actividad in conjunto %}
+<tbody>
+    <tr>
+        <td>
+            {{actividad.Titulo}} 
+        </td>
+        <td>
+            {% if actividad.ProyectoAsignado %}
+                {{actividad.ProyectoAsignado.Titulo}} 
+            {% elif actividad.EventoAsignado %}
+                {{actividad.EventoAsignado.Titulo}} 
+            {% else %}
+                no aplica
+            {% endif %}
+        </td>
+        <td>
+            {{actividad.Fecha}} {{actividad.Hora}} 
+        </td>
+        <td>
+            {{actividad.Responsable.Nombres}} {{actividad.Responsable.Apellidos}} 
+        </td>
+    </tr>
+</tbody>
+{% endfor %}
+</table>
+</div>
+
+{% endblock %}

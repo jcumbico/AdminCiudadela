@@ -1,0 +1,56 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+{% for directiva1 in conjunto %}
+<div class="row">
+    <div class="col-sm-5" style="text-align:right">Presidente:</div>
+    <div class="col-sm-5">
+        {{directiva1.Presidente.Nombres}} {{directiva1.Presidente.Apellidos}}
+    </div>
+    <div class="col-sm-5" style="text-align:right">Vicepresidente:</div>
+    <div class="col-sm-5">
+        {{directiva1.VicePresidente.Nombres}} {{directiva1.VicePresidente.Apellidos}}
+    </div>
+    <div class="col-sm-5" style="text-align:right">Secretaria:</div>
+    <div class="col-sm-5">
+        {{directiva1.Secretaria.Nombres}} {{directiva1.Secretaria.Apellidos}}
+    </div>
+    <div class="col-sm-5" style="text-align:right">Tesorero:</div>
+    <div class="col-sm-5">
+        {{directiva1.Tesorero.Nombres}} {{directiva1.Tesorero.Apellidos}}
+    </div>
+    <div class="col-sm-5" style="text-align:right">Primer Vocal:</div>
+    <div class="col-sm-5">
+        {{directiva1.PrimerVocal.Nombres}} {{directiva1.PrimerVocal.Apellidos}}
+    </div>
+    <div class="col-sm-5" style="text-align:right">Segundo Vocal:</div>
+    <div class="col-sm-5">
+        {{directiva1.SegundoVocal.Nombres}} {{directiva1.SegundoVocal.Apellidos}}
+    </div>
+    <div class="col-sm-5" style="text-align:right">Tercer Vocal:</div>
+    <div class="col-sm-5">
+        {{directiva1.TercerVocal.Nombres}} {{directiva1.TercerVocal.Apellidos}}
+    </div>
+    <div class="col-sm-5" style="text-align:right">Cuarto Vocal:</div>
+    <div class="col-sm-5">
+        {{directiva1.CuartoVocal.Nombres}} {{directiva1.CuartoVocal.Apellidos}}
+    </div>
+    <div class="col-sm-5" style="text-align:right">Sindico:</div>
+    <div class="col-sm-5">
+        {{directiva1.Sindico.Nombres}} {{directiva1.Sindico.Apellidos}}
+    </div>
+
+    <div class="col-sm-5" style="text-align:right">Periodo:</div>
+    <div class="col-sm-5">
+        Desde {{directiva1.FechaDeInicio}} Hasta {{directiva1.FechaDeFinalizacion}}
+    </div>
+
+</div>
+<br />
+{% endfor %}
+
+{% endblock %}

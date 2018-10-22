@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script> 
+    <script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script> 
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+
+</head>
+
+<body>
+	<div style="font-family:Calibri; float:left;text-align: center;font-size:32px;font-weight:bold; width:100%;">
+        <img src="../../static/app/imagenes/logo4.png" />
+        CIUDADELA LAS TEJAS
+    </div>
+
+    <div class="navbar navbar-inverse navbar-header" style="width:100%">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                {#<a href="/" class="navbar-brand">Application name</a>#}
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'nosotros' %}">Directiva</a></li>
+                    <li><a href="{% url 'proyectos' %}">Proyectos</a></li>
+                    <li><a href="{% url 'eventos' %}">Eventos</a></li>
+                    <li><a href="{% url 'actividades' %}">Actividades</a></li>
+                    <li><a href="{% url 'contactenos' %}">Contactenos</a></li>
+{% if user.is_authenticated %}
+                    <li><a href="{% url 'cuentas' %}">Cuentas</a></li>
+                    <li><a href="{% url 'estadisticas' %}">Estadísticas</a></li>
+{% endif %}
+                </ul>
+                {% include 'app/loginpartial.html' %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+{% block content %}{% endblock %}
+        <hr/>
+        <footer style="text-align:center">
+			Ciudadela las Tejas<br>
+			av. 25 de Julio <br>
+			<b>Las Tejas un lindo lugar donde se vive bien.</b>
+        </footer>
+    </div>
+
+    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+{% block scripts %}{% endblock %}
+
+</body>
+</html>
